@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Royal Feast | Contact</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<div class="loader-wrapper">
+    <div class="restaurant-loader"></div>
+</div>
+
+<header>
+<nav class="navbar">
+<div class="container nav-container">
+<div class="logo">Royal Feast</div>
+<ul class="nav-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="menu.html">Menu</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+<div class="hamburger"><i class="fas fa-bars"></i></div>
+</div>
+</nav>
+</header>
+
+<!-- Contact Section -->
+<section class="contact-section">
+<div class="container">
+<h2 style="text-align:center; font-size:56px; color:var(--primary); margin-bottom:60px; padding-top:40px;">Get In Touch</h2>
+
+<div class="contact-grid reveal">
+
+<!-- Left Side -->
+<div>
+<h3 style="color:var(--primary); font-size:32px; margin-bottom:20px;">Visit Us</h3>
+<p><strong>Address:</strong> MI Road, Jaipur, Rajasthan</p>
+<p><strong>Phone:</strong> +91 98765 43210</p>
+<p><strong>Email:</strong> hello@royalfeast.com</p>
+<p><strong>Opening Hours:</strong></p>
+<p>Monday – Sunday</p>
+<p>12:00 PM – 11:00 PM</p>
+</div>
+
+<!-- Right Side Form -->
+<div>
+<form id="contactForm">
+<input type="text" placeholder="Your Name" required>
+<input type="email" placeholder="Your Email" required>
+<textarea rows="5" placeholder="Your Message" required></textarea>
+<button type="submit" class="btn btn-primary">Send Message</button>
+</form>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- Reservation Section -->
+<section class="reservation-section container reveal" style="padding:100px 0;">
+<h2 style="text-align:center; font-size:48px; color:var(--primary); margin-bottom:50px;">Book a Table</h2>
+
+<form id="reservationForm" class="reservation-form">
+<div class="reservation-grid">
+
+<div>
+<label>Full Name</label>
+<input type="text" id="resName" required>
+</div>
+
+<div>
+<label>Email</label>
+<input type="email" id="email" placeholder="Your Email" required>
+</div>
+
+<div>
+<label>Phone Number</label>
+<input type="tel" id="resPhone" required>
+</div>
+
+<div>
+<label>Select Date</label>
+<input type="date" id="resDate" required>
+</div>
+
+<div>
+<label>Select Time</label>
+<input type="time" id="resTime" required>
+</div>
+
+<div>
+<label>Number of Guests</label>
+<select id="resGuests" required>
+<option value="">Select</option>
+<option>1 Person</option>
+<option>2 People</option>
+<option>3 People</option>
+<option>4 People</option>
+<option>5+ People</option>
+</select>
+</div>
+
+</div>
+
+<div style="text-align:center; margin-top:30px;">
+<button type="submit" class="btn btn-primary">Reserve Now</button>
+</div>
+</form>
+</section>
+
+<!-- Google Maps -->
+<section>
+<iframe
+src="https://www.google.com/maps?q=MI+Road,Jaipur,Rajasthan&output=embed"
+width="100%"
+height="400"
+style="border:0;"
+allowfullscreen=""
+loading="lazy">
+</iframe>
+</section>
+
+<footer>
+<p>Royal Feast Restaurant</p>
+<p>MI Road, Jaipur, Rajasthan</p>
+<p>© 2026 Royal Feast. All Rights Reserved.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
