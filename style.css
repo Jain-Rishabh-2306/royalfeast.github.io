@@ -43,6 +43,7 @@ h1,h2,h3,h4{
     align-items:center;
     justify-content:center;
     text-align:center;
+    z-index: 0;
 }
 
 .hero::after{
@@ -57,7 +58,7 @@ h1,h2,h3,h4{
     position:relative;
     color:white;
     max-width:800px;
-    z-index: 2;
+    z-index: 3;
 }
 .hero h1{
     font-size:72px;
@@ -77,6 +78,8 @@ h1,h2,h3,h4{
     letter-spacing:1px;
     transition:.4s;
     display:inline-block;
+    position: relative;
+    z-index: 3;
 }
 
 .btn-primary{
